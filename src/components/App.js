@@ -52,7 +52,6 @@ class App extends Component {
     }else{
       window.alert('Marketplace contract not deployed to detected network.')
     }
-
   }
 
   constructor(props) {
