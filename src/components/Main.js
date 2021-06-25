@@ -1,11 +1,13 @@
 
 import React, { Component } from 'react';
+import '../components/App.css';
+
 
 class Main extends Component {
 
   render() {
     return (
-      <div id="content">
+      <div id="content">    
         <h1>Add Product</h1>
         <form onSubmit={(event) => {
           event.preventDefault()
@@ -56,6 +58,7 @@ class Main extends Component {
                   <td>
                     { !product.purchased
                       ? <button
+                      class="btn btn-primary"
                           name={product.id}
                           value={product.price}
                           onClick={(event) => {
